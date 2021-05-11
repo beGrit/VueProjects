@@ -1,0 +1,44 @@
+.widget-wrap {
+  margin: 20px 0;
+}
+.widget-title {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+  margin-bottom: 1em;
+  margin-left: 5px;
+  line-height: 1em;
+  text-shadow: 0 1px #fff;
+  font-weight: bold;
+}
+.widget {
+  line-height: 1.6em;
+  word-wrap: break-word;
+  font-size: 0.9em;
+}
+.widget {
+  color: #777;
+  text-shadow: 0 1px #fff;
+  background: #fff;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,.3);
+  padding: 15px;
+  border-radius: 3px;
+}
+.widget:hover {
+  box-shadow: 0 2px 10px 3px rgba(0,0,0,.15);
+  transform: translateY(-3px);
+  transition: all .2s ease-in 0s;
+}
+
+.widget ul, .widget ol {
+  list-style: none;
+  margin: 0;
+}
+
+.widget a {
+  color: #999;
+  text-decoration: none;
+}
+
+

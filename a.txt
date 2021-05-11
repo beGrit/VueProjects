@@ -1,0 +1,7 @@
+
+> blog@1.0.0 dev /home/lsf/WebstormProjects/blog
+> webpack-dev-server --inline --progress --config build/webpack.dev.conf.js
+
+ DONE  Compiled successfully in 3633ms9:50:08 AM
+
+ I  Your application is running here: http://localhost:8080
