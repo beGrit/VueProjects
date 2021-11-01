@@ -4,6 +4,7 @@ import IndexLayout from "../views/layout/IndexLayout";
 
 Vue.use(Router)
 const routes = [
+  // 首页(展示博客概览)
   {
     path: '/',
     name: '',
@@ -15,18 +16,29 @@ const routes = [
       component: () => import('@/views/home/index')
     }]
   },
+  // 博客详情页面
   {
     path: '/blog',
     component: IndexLayout,
     children: [{
       path: ':blogId',
       name: 'BlogDetail',
-      component: () => import('../views/detail/index'),
+      component: () => import('@/views/detail/index'),
       props: (route) => {
         return {
           blogId: route.params.blogId
         }
       }
+    }]
+  },
+  // 归档页面
+  {
+    path: '/archives',
+    component: IndexLayout,
+    children: [{
+      path: '',
+      name: "Archives",
+      component: () => import('@/views/archives/index'),
     }]
   }
 ]

@@ -61,7 +61,15 @@ export default {
   props: {
     item: {
       default() {
-        return {}
+        return {
+          'index': 1,
+          'title': 'Scrapy教程',
+          'authorName': 'Pocky',
+          'date': '2021-01-05',
+          'description': 'Scrapy为下载item中包含的文件(比如在爬取到产品时，同时也想保存对应的图片)提供了一个可重用的 item pipelines . 这些pipeline有些共同的方法和结构(我们称之为media pipeline)。一般来说你会使用Files Pipeline或者 Images Pipeline.',
+          'likes': 1000,
+          'views': 2000,
+        }
       }
     },
   },

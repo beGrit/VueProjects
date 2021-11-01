@@ -2,12 +2,14 @@
 .bounceInLeft {
   animation-name: bounceInLeft;
 }
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
 @keyframes bounceInLeft {
   0% {
     opacity: 0;
@@ -32,11 +34,13 @@
     transform: translateX(0);
   }
 }
+
 #header {
   height: 166px;
   position: relative;
   border-bottom: 1px solid #ddd;
 }
+
 #banner {
   position: absolute;
   top: 0;
@@ -98,30 +102,49 @@
 .inner {
   display: inline;
   float: left;
-  width: 98.3333333333333%;
-  margin: 0 0.8333333333333%;
+  width: 100%;
+  margin: 0 0;
 }
 
 #main-nav {
   float: left;
 }
-nav {
+
+#main-nav {
   display: block;
+  width: 80%;
+  height: 60px;
 }
+
 .main-nav-link {
   float: left;
   color: #fff;
   opacity: 0.6;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-  filter: alpha(opacity=60);
   text-decoration: none;
-  text-shadow: 0 1px rgba(0,0,0,0.2);
   display: block;
   padding: 20px 15px;
   font-weight: 300;
   letter-spacing: 1px;
+
+  /*为透明度（opacity）属性添加动画*/
   transition: 0.2s opacity;
 }
+
 .main-nav-link:hover {
   opacity: 1;
+}
+
+#search-input {
+  width: 20%;
+  display: inline-block;
+}
+
+#search-input label {
+  width: 10%;
+  float: left;
+}
+
+#search-input input {
+  width: 80%;
+  float: right;
 }

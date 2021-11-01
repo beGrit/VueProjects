@@ -1,6 +1,6 @@
 <template>
   <div id="container">
-    <top-navbar2></top-navbar2>
+    <top-navbar></top-navbar>
     <div id="wrap" class="ui grid body">
       <div class="ui row">
         <div class="ui column">
@@ -14,11 +14,10 @@
 </template>
 
 <script>
-import TopNavbar from "./components/TopNavbar3";
-import TopNavbar2 from "./components/TopNavbar";
+import TopNavbar from "@/components/Layout/TopNavbar";
 export default {
   name: 'Layout',
-  components: {TopNavbar2, TopNavbar}
+  components: {TopNavbar}
 }
 </script>
 <style scoped>

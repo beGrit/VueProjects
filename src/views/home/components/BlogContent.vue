@@ -1,7 +1,7 @@
 <template>
   <div>
+    <!--头部区-->
     <div class="ui row">
-      <!--头部区-->
       <div class="ui top segment">
         <div class="ui middle aligned two column grid">
           <div class="left aligned column">
@@ -15,16 +15,16 @@
         </div>
       </div>
     </div>
+    <!--内容区-->
     <div class="ui row">
-      <!--内容区-->
       <div class="ui tow column raised grid segment stretched">
         <div v-for="item in list" class="eight wide column">
           <blog-item :item="item"></blog-item>
         </div>
       </div>
     </div>
+    <!-- 底部区 -->
     <div class="ui row">
-      <!-- 底部区 -->
       <div class="ui bottom attached segment">
         <div class="ui middle aligned two column grid">
           <div class="column">
@@ -41,9 +41,9 @@
 
 <script>
 import BlogItem from "../../../components/BlogItem";
-import PlaceHolderItem from '@/components/PlaceHolderItem'
+import PlaceHolderItem from '../../../components/PlaceHolderItem'
 
-let myJson = {
+let data = {
   'total': 100,
   'pageSize': 10,
   'pageNum': 1,
@@ -119,9 +119,9 @@ export default {
   components: {PlaceHolderItem, BlogItem},
   data() {
     return {
-      total: myJson.total,
-      pageSize: myJson.pageSize,
-      pageNum: myJson.pageNum,
+      total: data.total,
+      pageSize: data.pageSize,
+      pageNum: data.pageNum,
       list: [],
       item: {}
     }
@@ -129,7 +129,7 @@ export default {
   created: function () {
   },
   mounted() {
-    this.list = myJson.list
+    this.list = data.list;
   },
   methods: {},
 }
